@@ -1,9 +1,9 @@
 import { useState } from "react"
-function PostForm({onSubmit})
+function PostForm({onSubmit,initalValue})
 {
     const [post, setPost] = useState({
-        title : "",
-        body : ""
+        title : initalValue.title || "",
+        body : initalValue.body || ""
     })
 
     const hangleChangeInput = (e) =>

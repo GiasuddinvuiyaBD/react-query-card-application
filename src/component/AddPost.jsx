@@ -27,7 +27,7 @@ function AddPost()
     return(
        <>
          <h2>Add Post</h2>
-         <PostForm onSubmit={handleAppPost} />
+         <PostForm onSubmit={handleAppPost} initalValue={{}} />
        </>
     )
 }
